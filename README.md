@@ -28,4 +28,4 @@ Write a function which determines whether it is possible to create a specific ca
 
 ### Level 5
 
-Wrtie a function which works out the change required from a transaction and removes it from the drawer if possible.
+Write a function which works out the change required from a transaction and removes it from the drawer if possible.

@@ -10,5 +10,15 @@ const drawer = require('../drawer')
  * @returns {boolean} whether it is possible to make the amount from the drawer
  */
 function canMakeAmount(target, drawer) {
-  // code here
+  let remaining = target
+  for (let i = drawer.length - 1; i >= 0; i--) {
+    const data = drawer[i]
+    while (remaining >= data.value && data.quantity > 0) {
+      data.quantity -= 1
+      remaining -= data.value
+    }
+  }
+  return remaining === 0
 }
+
+module.exports = { canMakeAmount }

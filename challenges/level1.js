@@ -10,7 +10,11 @@ const drawer = require('../drawer')
  * @returns {object[]} - the drawer, after removing the item
  */
 function removeItem(name, drawer) {
-  // code here
+  for (let i = 0; i < drawer.length; i++) {
+    const data = drawer[i]
+    if (data.name === name) data.quantity -= 1
+  }
+  return drawer
 }
 
 /**
@@ -20,7 +24,11 @@ function removeItem(name, drawer) {
  * @returns {object[]}
  */
 function addItem(name, drawer) {
-  // code here
+  for (let i = 0; i < drawer.length; i++) {
+    const data = drawer[i]
+    if (data.name === name) data.quantity += 1
+  }
+  return drawer
 }
 
 module.exports = {

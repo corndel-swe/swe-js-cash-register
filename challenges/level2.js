@@ -10,7 +10,12 @@ const drawer = require('../drawer')
  * @returns {number} How many coins are in the drawer
  */
 function countCoins(drawer) {
-  // code here
+  let count = 0
+  for (let i = 0; i < drawer.length; i++) {
+    const data = drawer[i]
+    if (data.value < 100) count += data.quantity
+  }
+  return count
 }
 
 /**
@@ -19,5 +24,12 @@ function countCoins(drawer) {
  * @returns {number} How many notes are in the drawer
  */
 function countNotes(drawer) {
-  // code here
+  let count = 0
+  for (let i = 0; i < drawer.length; i++) {
+    const data = drawer[i]
+    if (data.value >= 100) count += data.quantity
+  }
+  return count
 }
+
+module.exports = { countCoins, countNotes }

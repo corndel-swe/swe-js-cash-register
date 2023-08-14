@@ -8,24 +8,24 @@ Another feature we believe could be tweaked is the data structures, as they are 
 
 ### Level 1 (Easy)
 
-Write a function which removes a single item from the drawer.
+Complete the `removeItem` function which removes a single item from the drawer.
 
-Write a function which adds a single item to the drawer.
+Complete the `addItem` function which adds a single item to the drawer.
 
 ### Level 2
 
-Write a function which counts how many coins are in the drawer.
+Complete the `countCoins` function which counts how many coins are in the drawer.
 
-Write a function which counts how many notes are in the drawer.
+Complete the `countNotes` function which counts how many notes are in the drawer.
 
 ### Level 3
 
-Write a function which calculates the total amount of money in the drawer.
+Complete the `sumDrawer` function which calculates the total amount of money in the drawer.
 
 ### Level 4
 
-Write a function which determines whether it is possible to create a specific cash amount from the items in the drawer.
+Complete the `canMakeAmount` function which determines whether it is possible to create a specific cash amount from the items in the drawer.
 
 ### Level 5
 
-Wrtie a function which works out the change required from a transaction and removes it from the drawer if possible.
+Complete the `transaction` function which works out the change required from a transaction and removes it from the drawer if possible.

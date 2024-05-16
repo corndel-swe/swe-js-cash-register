@@ -1,7 +1,9 @@
-const { transaction } = require('./level5')
+import { describe, it } from 'mocha'
+import assert from 'assert'
+import { transaction } from '../lib/level-5.js'
 
-describe('transaction', () => {
-  it('returns the drawer with the right adjustments', () => {
+describe('transaction', function () {
+  it('returns the drawer with the right adjustments', function () {
     const cost = 450
     const paid = 1000
     const drawer = [
@@ -11,7 +13,7 @@ describe('transaction', () => {
       { name: 'quarter', value: 25, quantity: 3 },
       { name: 'one', value: 100, quantity: 2 },
       { name: 'five', value: 500, quantity: 1 },
-      { name: 'ten', value: 1_000, quantity: 1 }
+      { name: 'ten', value: 1000, quantity: 1 }
     ]
     const expectedDrawer = [
       { name: 'penny', value: 1, quantity: 2 },
@@ -20,9 +22,9 @@ describe('transaction', () => {
       { name: 'quarter', value: 25, quantity: 1 },
       { name: 'one', value: 100, quantity: 2 },
       { name: 'five', value: 500, quantity: 0 },
-      { name: 'ten', value: 1_000, quantity: 2 }
+      { name: 'ten', value: 1000, quantity: 2 }
     ]
     const testDrawer = transaction(cost, paid, drawer)
-    expect(testDrawer).toEqual(expectedDrawer)
+    assert.deepStrictEqual(testDrawer, expectedDrawer)
   })
 })

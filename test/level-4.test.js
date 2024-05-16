@@ -1,6 +1,8 @@
-const { canMakeAmount } = require('./level4')
+import { describe, it } from 'mocha'
+import assert from 'assert'
+import { canMakeAmount } from '../lib/level-4.js'
 
-describe('canMakeAmount', () => {
+describe('canMakeAmount', function () {
   const drawer = [
     { name: 'penny', value: 1, quantity: 2 },
     { name: 'nickel', value: 5, quantity: 0 },
@@ -8,13 +10,14 @@ describe('canMakeAmount', () => {
     { name: 'quarter', value: 25, quantity: 3 },
     { name: 'one', value: 100, quantity: 2 },
     { name: 'five', value: 500, quantity: 1 },
-    { name: 'ten', value: 1_000, quantity: 1 }
+    { name: 'ten', value: 1000, quantity: 1 }
   ]
-  it('returns false when the amount cannot be made', () => {
-    expect(canMakeAmount(613, drawer)).toBeFalsy()
+
+  it('returns false when the amount cannot be made', function () {
+    assert.strictEqual(canMakeAmount(613, drawer), false)
   })
 
-  it('returns true when the amount can be made', () => {
+  it('returns true when the amount can be made', function () {
     const drawer = [
       { name: 'penny', value: 1, quantity: 2 },
       { name: 'nickel', value: 5, quantity: 0 },
@@ -22,8 +25,8 @@ describe('canMakeAmount', () => {
       { name: 'quarter', value: 25, quantity: 3 },
       { name: 'one', value: 100, quantity: 2 },
       { name: 'five', value: 500, quantity: 1 },
-      { name: 'ten', value: 1_000, quantity: 1 }
+      { name: 'ten', value: 1000, quantity: 1 }
     ]
-    expect(canMakeAmount(1651, drawer)).toBeTruthy()
+    assert.strictEqual(canMakeAmount(1651, drawer), true)
   })
 })

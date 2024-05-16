@@ -5,7 +5,7 @@
  * https://blog.agentrisk.com/you-better-work-in-cents-not-dollars-2edb52cdf308
  */
 
-const drawer = [
+export const drawer = [
   {
     name: 'penny',
     value: 1, // a penny is 1 cent
@@ -52,5 +52,3 @@ const drawer = [
     quantity: 1
   }
 ]
-
-module.exports = drawer

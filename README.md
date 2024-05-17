@@ -1,5 +1,9 @@
 # Cash register
 
+<p align="center">
+  <img src="./assets/cr-logo.png" width="200px">
+</p>
+
 Welcome to the cash register! This is a library of functions to be used in
 point-of-sale systems around the country.
 

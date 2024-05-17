@@ -12,11 +12,11 @@
     "test:2b": "mocha ./test/2b.test.js",
     "test:3a": "mocha ./test/3a.test.js",
     "test:3b": "mocha ./test/3b.test.js",
-    "test:level-1": "mocha ./test/level1.test.js",
-    "test:level-2": "mocha ./test/level2.test.js",
-    "test:level-3": "mocha ./test/level3.test.js",
-    "test:level-4": "mocha ./test/level4.test.js",
-    "test:level-5": "mocha ./test/level5.test.js"
+    "test:level-1": "mocha ./test/level-1.test.js",
+    "test:level-2": "mocha ./test/level-2.test.js",
+    "test:level-3": "mocha ./test/level-3.test.js",
+    "test:level-4": "mocha ./test/level-4.test.js",
+    "test:level-5": "mocha ./test/level-5.test.js"
   },
   "keywords": [],
   "author": "",

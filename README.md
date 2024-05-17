@@ -92,3 +92,10 @@ create a specific cash amount from the items in the drawer.
 
 Complete the `transaction` function which works out the change required from a
 transaction and removes it from the drawer if possible.
+
+## Extension
+
+What other functions could you add to the cash register? What about calculating
+tax, discounts, gift cards? Maybe protect the cash register with a password?
+Have some fun thinking up different functionality you could add and get
+creative.

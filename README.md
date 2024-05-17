@@ -57,6 +57,9 @@ flowchart TD
 >
 > You can test the functions using `npm run test:level-1` and similar.
 
+Check out [drawer.js](./drawer.js) to see the data structure you will be dealing
+with.
+
 ### Level 1
 
 Complete the `removeItem` function which removes a single item from the drawer.

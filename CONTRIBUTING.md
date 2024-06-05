@@ -10,6 +10,9 @@ A few things you should know:
 - Currency is in USD: penny, nickel, dime and quarter are coins; everything else
   is a note
 
+- Drawer objects are always ordered descending by value (biggest denomination at
+  the front)
+
 - Value is always given as an integer in cents, and never a decimal, so a
   `value` of `210` means $2.10.
   [Want to know why?](https://blog.agentrisk.com/you-better-work-in-cents-not-dollars-2edb52cdf308)
